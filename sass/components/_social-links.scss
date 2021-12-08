@@ -1,0 +1,31 @@
+.team-social-links > li,
+.footer-links-list > li {
+  width: 44px;
+  height: 44px;
+}
+.social-links-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-links {
+  display: flex;
+  justify-content: center;
+}
+.social-links-item.team {
+  color: $icons-color;
+}
+.social-links-item.team:not(:last-child) {
+  margin-right: 10px;
+}
+.team-social-links-icon {
+  fill: currentColor;
+}

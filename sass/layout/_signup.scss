@@ -1,0 +1,101 @@
+.signup-form-field {
+  margin-bottom: 10px;
+}
+.signup-form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+}
+.signup-wrap {
+  position: relative;
+}
+.signup-form-input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  padding-right: 15px;
+
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.signup-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: $logo-header;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signup-comment-field {
+  position: relative;
+
+  display: block;
+  margin-bottom: 20px;
+}
+.signup-form-comment {
+  padding: 12px 16px;
+
+  height: 120px;
+  width: 100%;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.signup-form-input:focus,
+.signup-form-comment:focus {
+  border: 1px solid $logo-color;
+  outline: none;
+}
+.signup-form-input:focus + .signup-form-icon {
+  fill: $logo-color;
+}
+
+.form-policy-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.policy-checkbox-default {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.policy-checkbox-custom {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: solid 1px $logo-header;
+  border-radius: 2px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.policy-checkbox-default:checked + .policy-checkbox-custom {
+  background-color: $logo-color;
+  border-color: $logo-color;
+}
+
+.signup-policy-label {
+  line-height: 1.71;
+}
+.signup-policy-label > a {
+  color: $logo-color;
+}
+
+.signup-form-button {
+  display: block;
+  margin: 0 auto;
+}

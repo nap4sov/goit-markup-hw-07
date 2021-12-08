@@ -1,0 +1,59 @@
+.hero-button,
+.signup-form-button {
+  min-width: 200px;
+  min-height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: solid 0px transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
+
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button:hover,
+.hero-button:focus,
+.footer-submit-button:hover,
+.footer-submit-button:focus,
+.signup-form-button:hover,
+.signup-form-button:focus,
+.footer-submit-button:hover,
+.footer-submit-button:focus {
+  background-color: #188ce8;
+  cursor: pointer;
+}
+.button-list-item {
+  min-height: 38px;
+  background-color: #f5f4fa;
+  border: solid 0px transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+
+  color: #212121;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-list-item:hover,
+.button-list-item:focus,
+.button-list-item:active {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.site-navigation {
+  margin-left: 93px;
+  li:not(:last-child) {
+    margin-right: 50px;
+  }
+}

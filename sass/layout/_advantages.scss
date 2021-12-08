@@ -1,0 +1,22 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  .item {
+    width: 270px;
+  }
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.advantages-thumb {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $team-background;
+  border-radius: 4px;
+}

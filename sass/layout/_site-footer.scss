@@ -1,0 +1,123 @@
+.site-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-background;
+}
+.container.footer {
+  display: flex;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+.footer-social-links {
+  margin-top: 12px;
+  margin-right: 93px;
+}
+.footer-social-links > p,
+.footer-subscription > p {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $logo-footer;
+}
+.footer-links-list {
+  display: flex;
+}
+.footer-links-list > li:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-address li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.contact-footer {
+  color: $contact-footer-color;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address {
+  color: $address-color;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-links-item.footer {
+  color: $address-color;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-subscription-form {
+  margin-top: 12px;
+}
+.footer-subscription-field {
+  display: flex;
+}
+.footer-subscription-label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $logo-footer;
+}
+.footer-email-input {
+  height: 50px;
+  width: 358px;
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $footer-background;
+  color: $primary-heading-color;
+  font-size: 20px;
+  line-height: 1.25;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-email-input:focus {
+  border: 1px solid $logo-color;
+  outline: none;
+}
+.footer-email-input::placeholder {
+  margin-right: 16px;
+  color: $contact-footer-color;
+}
+.footer-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 200px;
+  min-height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: solid 0px transparent;
+  border-radius: 4px;
+
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-submit-icon {
+  margin-left: 10px;
+  fill: $primary-heading-color;
+}

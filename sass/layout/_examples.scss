@@ -1,0 +1,30 @@
+.examples {
+  padding-top: 0px;
+}
+.example-photos-thumb {
+  position: relative;
+
+  width: 370px;
+  height: 294px;
+}
+.example-photos-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
+  color: $primary-heading-color;
+}
+.example-photos-list {
+  display: flex;
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+}

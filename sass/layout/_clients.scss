@@ -1,0 +1,31 @@
+.clients-list {
+  display: flex;
+
+  li {
+    width: 170px;
+    height: 92px;
+  }
+
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-thumb {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  color: $icons-color;
+  border: 1px solid $icons-color;
+  border-radius: 4px;
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-icon {
+  fill: currentColor;
+}
