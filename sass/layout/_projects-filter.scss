@@ -1,8 +1,7 @@
-.button-list {
-  display: flex;
-  justify-content: center;
+.filter {
+  @extend %flex-centered;
   margin-bottom: 50px;
 }
-.button-list > li:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }

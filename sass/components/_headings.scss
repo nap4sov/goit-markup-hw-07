@@ -1,6 +1,5 @@
-.main-heading {
+.hero__heading {
   width: 696px;
-  margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
@@ -13,8 +12,8 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
 }
+
 .section-heading {
-  margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
 
@@ -22,11 +21,9 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 
-.sub-section-heading {
-  margin-top: 0px;
+.advantages__heading {
   margin-bottom: 10px;
   text-transform: uppercase;
 
@@ -34,20 +31,16 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
 }
-.team-member {
-  margin-top: 0px;
+.team-member__name {
   margin-bottom: 10px;
 
   color: $secondary-heading-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
-.project-heading {
-  margin-top: 0;
+.sample__heading {
   margin-bottom: 4px;
 
   color: $secondary-heading-color;

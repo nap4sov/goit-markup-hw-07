@@ -1,20 +1,18 @@
-.clients-list {
+.clients__list {
   display: flex;
-
-  li {
-    width: 170px;
-    height: 92px;
-  }
-
-  li:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
-.clients-thumb {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.clients__item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__thumb {
+  @extend %flex-centered;
   width: 100%;
   height: 100%;
 
@@ -22,10 +20,11 @@
   border: 1px solid $icons-color;
   border-radius: 4px;
 
-  transition-property: color, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-icon {
-  fill: currentColor;
+  transition: $transition-clients;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
 }

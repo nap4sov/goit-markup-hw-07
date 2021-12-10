@@ -1,17 +1,10 @@
-.section.team {
+.team {
   background-color: $team-background;
 }
-.team-members-list {
+.team__list {
   display: flex;
-
-  p {
-    margin-bottom: 16px;
-
-    font-size: 16px;
-    line-height: 1.19;
-  }
 }
-.team-member-card {
+.team-member {
   min-width: 270px;
   text-align: center;
 
@@ -23,9 +16,14 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
+}
+.team-member__meta {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-member__text {
+  margin-bottom: 16px;
 
-  .description {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+  font-size: 16px;
+  line-height: 1.19;
 }

@@ -1,4 +1,5 @@
 @import 'utils/variables';
+@import 'utils/placeholders';
 
 @import 'base/box-sizing';
 @import 'base/body';
@@ -8,17 +9,18 @@
 @import 'components/container';
 @import 'components/section';
 @import 'components/logo';
+@import 'components/navigation-links';
+@import 'components/contact-links';
 @import 'components/social-links';
-@import 'components/hover-focus';
+@import 'components/address-links';
 @import 'components/headings';
 @import 'components/buttons';
+@import 'components/icons';
 @import 'components/backdrop';
 @import 'components/modal';
-@import 'components/modal-close';
 
 @import 'layout/site-header';
 @import 'layout/navigation';
-@import 'layout/contacts';
 @import 'layout/hero';
 @import 'layout/advantages';
 @import 'layout/examples';
@@ -27,4 +29,6 @@
 @import 'layout/projects-filter';
 @import 'layout/projects';
 @import 'layout/site-footer';
+@import 'layout/address';
+@import 'layout/footer-subscription';
 @import 'layout/signup';

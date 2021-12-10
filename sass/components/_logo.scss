@@ -1,16 +1,16 @@
 .logo {
   color: $logo-color;
   text-decoration: none;
-  font-family: Raleway;
+  font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo-studio-header {
+.logo--header {
   color: $logo-header;
 }
-.logo-studio-footer {
+.logo--footer {
   display: inline-block;
   margin-bottom: 20px;
 

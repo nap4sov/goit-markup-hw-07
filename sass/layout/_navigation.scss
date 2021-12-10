@@ -1,10 +1,17 @@
 .navigation {
-  display: flex;
-  align-items: center;
+  @extend %flex-centered;
 }
-.site-navigation {
+.navigation__list {
+  @extend %flex-centered;
   margin-left: 93px;
-  li:not(:last-child) {
-    margin-right: 50px;
-  }
+}
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+.header__contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
 }

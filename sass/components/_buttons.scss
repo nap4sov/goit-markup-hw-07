@@ -1,35 +1,38 @@
-.hero-button,
-.signup-form-button {
-  min-width: 200px;
-  min-height: 50px;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: solid 0px transparent;
-  border-radius: 4px;
+.hero__button {
+  @extend %main-button;
   padding: 10px 32px;
   text-align: center;
-
-  color: #ffffff;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
 }
-.hero-button:hover,
-.hero-button:focus,
-.footer-submit-button:hover,
-.footer-submit-button:focus,
-.signup-form-button:hover,
-.signup-form-button:focus,
-.footer-submit-button:hover,
-.footer-submit-button:focus {
-  background-color: #188ce8;
-  cursor: pointer;
+
+.subscription__button {
+  @extend %main-button;
+  @extend %flex-centered;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
 }
-.button-list-item {
+
+.signup__button {
+  @extend %main-button;
+  padding: 10px 32px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
+}
+
+.filter__button {
   min-height: 38px;
   background-color: #f5f4fa;
   border: solid 0px transparent;
@@ -44,16 +47,39 @@
   line-height: 1.62;
   letter-spacing: 0.03em;
 
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition-filter;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffffff;
+    background-color: #2196f3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
 }
-.button-list-item:hover,
-.button-list-item:focus,
-.button-list-item:active {
-  color: #ffffff;
-  background-color: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
+
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  @extend %flex-centered;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  color: $logo-header;
+  background-color: $background-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: $transition-color;
+
+  &:hover,
+  &:focus {
+    color: $logo-color;
+    cursor: pointer;
+  }
 }

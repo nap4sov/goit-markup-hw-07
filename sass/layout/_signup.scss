@@ -1,16 +1,26 @@
-.signup-form-field {
-  margin-bottom: 10px;
+.signup__text {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $secondary-heading-color;
 }
-.signup-form-label {
+
+.signup__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
 }
-.signup-wrap {
+
+.input__wrap {
   position: relative;
+  margin-bottom: 10px;
 }
-.signup-form-input {
+
+.signup__input {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 42px;
@@ -21,25 +31,22 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.signup-form-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  fill: $logo-header;
+  transition: $transition-border;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border: 1px solid $logo-color;
+    outline: none;
+  }
 }
 
-.signup-comment-field {
+.comment__wrap {
   position: relative;
 
   display: block;
   margin-bottom: 20px;
 }
-.signup-form-comment {
+
+.signup__comment {
   padding: 12px 16px;
 
   height: 120px;
@@ -48,29 +55,20 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.signup-form-input:focus,
-.signup-form-comment:focus {
-  border: 1px solid $logo-color;
-  outline: none;
-}
-.signup-form-input:focus + .signup-form-icon {
-  fill: $logo-color;
+  transition: $transition-border;
+
+  &:focus {
+    border: 1px solid $logo-color;
+    outline: none;
+  }
 }
 
-.form-policy-field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.signup__policy {
+  @extend %flex-centered;
   margin-bottom: 30px;
 }
-.policy-checkbox-default {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.policy-checkbox-custom {
+
+.policy__check {
   width: 16px;
   height: 15px;
   margin-right: 8px;
@@ -81,21 +79,22 @@
   border: solid 1px $logo-header;
   border-radius: 2px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition-bg-color;
+
+  .policy__check--hidden:checked + & {
+    background-color: $logo-color;
+    border-color: $logo-color;
+  }
 }
-.policy-checkbox-default:checked + .policy-checkbox-custom {
-  background-color: $logo-color;
-  border-color: $logo-color;
+.policy__check--hidden {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.signup-policy-label {
+.policy__text {
   line-height: 1.71;
 }
-.signup-policy-label > a {
+.policy__link {
   color: $logo-color;
-}
-
-.signup-form-button {
-  display: block;
-  margin: 0 auto;
 }
